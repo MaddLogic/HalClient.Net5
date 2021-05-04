@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project=".\..\HalClient.Net5.Build\HalClient.Net5.Commons.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AutoGenerateBindingRedirects></AutoGenerateBindingRedirects>
+    <Version>5.0.1</Version>
+    <PackageProjectUrl>https://github.com/MaddLogic/HalClient.Net5</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/MaddLogic/HalClient.Net5.git</RepositoryUrl>
+    <PackageReleaseNotes>https://github.com/MaddLogic/HalClient.Net5/releases</PackageReleaseNotes>
+    <AssemblyVersion>5.0.1.0</AssemblyVersion>
+    <FileVersion>5.0.1.0</FileVersion>
+    <Description>Specialized http client for communicating with API's that support the HAL media type (https://github.com/MaddLogic/HalClient.Net5)</Description>
+    <Copyright>Copyright (C) Jason Madden, MaddLogic LLC</Copyright>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>1701;1702;</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+    <PackageReference Include="System.Runtime.Serialization.Formatters" Version="4.3.0" />
+    <PackageReference Include="Tavis.UriTemplates" Version="1.1.1" />
+  </ItemGroup>
+
+</Project>

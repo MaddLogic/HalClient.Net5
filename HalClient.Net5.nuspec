@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package >
+	<metadata>
+		<id>HalClient.Net5</id>
+		<version>5.1.0</version>
+		<description>Specialized http client for communicating with API's that support the HAL media type (https://github.com/MaddLogic/HalClient.Net5)</description>
+		<authors>Jason Madden, MaddLogic.com; Forked From: Geoffrey Braaf, WIS3GUY.NET</authors>		
+		<license>https://github.com/MaddLogic/HalClient.Net5/blob/master/Licence.md</license>
+		<projectUrl>https://github.com/MaddLogic/HalClient.Net5</projectUrl>
+		<iconUrl>https://github.com/MaddLogic/blob/master/logo.png?raw=true</iconUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>		
+		<copyright>Copyright (C) Jason Madden, MaddLogic LLC</copyright>
+		<tags>HttpClient Hypermedia Json HAL</tags>
+		<dependencies>
+			<dependency id="Newtonsoft.Json" version="10.0.2"/>
+			<dependency id="System.Net.Http" version="4.3.2"/>
+			<dependency id="Tavis.UriTemplates" version="1.1.1"/>
+		</dependencies>
+	</metadata>
+	<files>
+		<file src="lib\**\HalClient.Net.dll" target="lib" />
+		<file src="lib\**\HalClient.Net.pdb" target="lib" />
+	</files>
+</package>
